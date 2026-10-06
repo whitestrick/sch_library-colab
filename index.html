@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> school library</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Library - Book Management</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div>
-        <h1>School Library</h1>
-        <p>Welcome to the school library!</p>
-    </div>
-</body>
-</html>
+  <div class="container">
+    <header>
+      <h1>School Library Management</h1>
+      <p>Add, track, and remove books from the library inventory.</p>
+    </header>
+
+    <!-- Book Form Section -->
+    <section class="card form-section">
+      <h2>Add a New Book</h2>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="book-title">Book Title</label>
+          <input type="text" id="book-title" placeholder="e.g. Introduction to Algorithms" required />
+        </div>
+        <div class="form-group">
+          <label for="book-author">Author</label>
+          <input type="text" id="book-author" placeholder="e.g. Thomas H. Cormen" required />
+        </div>
+        <div class="form-group">
+          <label for="book-isbn">ISBN / Serial ID</label>
+          <input type="text" id="book-isbn" placeholder="e.g. 978-0262033848" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Book</button>
+      </form>
+    </section>
+
+    

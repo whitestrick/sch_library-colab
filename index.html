@@ -32,5 +32,32 @@
         <button type="submit" class="btn btn-primary">Add Book</button>
       </form>
     </section>
+    <!-- Book List Section -->
+    <section class="card list-section">
+      <div class="list-header">
+        <h2>Current Inventory</h2>
+        <span id="book-count" class="badge">0 books</span>
+      </div>
+      
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+          <!-- Dynamically populated rows will appear here -->
+        </tbody>
+      </table>
+      <p id="empty-state" class="empty-state">No books currently in inventory.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
     
